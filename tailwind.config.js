@@ -15,12 +15,12 @@ module.exports = {
         'bgButtomHover': '#f6d19c'
       },
       animation: {
-        shadowAnime: 'shadowAnime 2s ease-in-out infinite',
+        shadowAnime: 'shadowAnime 4s ease-in-out infinite',
       },
       keyframes: {
         shadowAnime: {
-          '0%, 100%': { 'box-shadow': '0 0 10px 5px white' },
-          '50%': { 'box-shadow': ' 0 0 10px 10px white' },
+          '0%, 100%': { 'box-shadow': '0 0 0 3px rgba(4, 5, 12, 0.90)' },
+          '50%': { 'box-shadow': ' 0 0 20px 3px rgba(4, 5, 12, 0.90)' },
         },
       },
       plugins: [],

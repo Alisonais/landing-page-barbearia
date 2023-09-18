@@ -8,7 +8,7 @@ export default function Logo() {
           <Image
             src={logo}
             alt="logo"
-            className=" h-[200px] w-[220px] shadow-[0_0_10px_5px_rgb(253,253,253)] rounded-[40px] hover:animate-shadowAnime"
+            className=" h-[200px] w-[220px] animate-shadowAnime rounded-[40px] "
           /> 
         </a>
       </div>
