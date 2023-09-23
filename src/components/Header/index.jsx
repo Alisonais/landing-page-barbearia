@@ -1,22 +1,22 @@
+'use client'
 import Button from '../Button';
 import Logo from '../Logo';
-
+import DropDown from '../dropDown';
+import Nav from '../nav';
 
 export default function Header() {
+    const styleHeader = "bg-background  px-[64px] py-4 flex justify-between items-center relative max-[768px]:px-4 ";
   return (
-    <header className="bg-background w-[1440px] px-[64px] py-4 flex justify-between items-center relative" >
-      
-      <Logo className="absolute" />
+    <header className={styleHeader} >
 
-      <div>
-        <ul className="flex gap-[64px] text-white text-2xl ">
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Equipe</a></li>
-        </ul>
-      </div>
+      <Logo />
 
-      <Button />
+      <Nav />
+
+      <Button content="Agendar Horario" />
+
+      <DropDown />
+
     </header>
   );
 };

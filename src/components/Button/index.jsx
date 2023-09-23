@@ -3,7 +3,8 @@ import React,{ useNavigate } from 'react';
 
 
 
-export default function Buttom() {
+export default function Buttom({content}) {
+  const className = " bg-bgButton max-[425px]:px-[10px] text-black px-[95px] py-[10px] rounded-lg text-xl hover:bg-bgButtomHover  ease-in-out duration-500 transition-all max-[768px]:px-[10px] "
 
   function toogleSchedule() {
    window.open('https://costabarbershop.youcanbook.me/');
@@ -11,10 +12,10 @@ export default function Buttom() {
 
   return (
     <button
-      className="bg-bgButton text-black px-[95px] py-[10px] rounded-lg text-xl hover:bg-bgButtomHover  ease-in-out duration-500 transition-all "
+      className={className}
       onClick={toogleSchedule}
     >
-      Agendar horário
+      {content}
     </button>
   );
 };

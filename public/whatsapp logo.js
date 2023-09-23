@@ -1,6 +1,6 @@
 'use client'
 
-export default function WhatsApp() {
+export default function WhatsApp({size}) {
 
   function handleMsg() {
     window.open('https://api.whatsapp.com/send?phone=5512981666880&text=Vim%20pelo%20seu%20site,%20e%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas', "width=600, height=400");
@@ -9,8 +9,8 @@ export default function WhatsApp() {
   return (
     <svg
       onClick={handleMsg}
-      width="56"
-      height="56"
+      width={size}
+      height={size}
       viewBox="0 0 56 56"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

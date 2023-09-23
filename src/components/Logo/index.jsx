@@ -2,13 +2,18 @@ import Image from "next/image";
 import logo from "../../../public/costa-barbearia.png";
 
 export default function Logo() {
+  // absolute max-[425px]:rounded-md max-[768px]:h-[100px] max-[768px]:w-[100px] max-[768px]:rounded-xl max-[768px]:relative
+  
+  const className = " w-[100px] h-[100px] rounded-md  "
+
+
   return (
-    <div className="h-[200px] w-[220px] absolute top-[16px] right-[50%] translate-x-[50%]">
+    <div>
         <a href="#">
           <Image
             src={logo}
             alt="logo"
-            className=" h-[200px] w-[220px] animate-shadowAnime rounded-[40px] "
+            className={className}
           /> 
         </a>
       </div>
