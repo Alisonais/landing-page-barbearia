@@ -1,8 +1,8 @@
-export default function Instagram({size}) {
+export default function Instagram() {
   return (
-    <svg
-      width={size}
-      height={size}
+      <svg
+      height="100%"
+      width="100%"
       viewBox="0 0 54 54"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -41,6 +41,5 @@ export default function Instagram({size}) {
         </linearGradient>
       </defs>
     </svg>
-
   );
 };
