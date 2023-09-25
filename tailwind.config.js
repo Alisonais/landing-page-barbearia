@@ -12,7 +12,8 @@ module.exports = {
         'background': 'rgba(4, 5, 12, 0.90)',
         'Linear': 'linear-gradient(180deg, #0D121E 0%, rgba(13, 18, 30, 0.51) 25%, rgba(13, 18, 30, 0.32) 51.56%, rgba(13, 18, 30, 0.51) 76.04%, #0D121E 100%)',
         'bgButton': '#F0B35B',
-        'bgButtomHover': '#f6d19c'
+        'bgButtomHover': '#f6d19c',
+        'azulEscuro' : '#0D121E'
       },
       animation: {
         shadowAnime: 'shadowAnime 4s ease-in-out infinite',
