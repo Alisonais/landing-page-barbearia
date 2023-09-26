@@ -8,13 +8,13 @@ export default function Sobre() {
       <div className='flex justify-center relative' >
         <Image
           alt="barbearia"
-          className=" w-full p-8 rotate-3 md:absolute md:w-[350px] md:z-10 md:top-14 rounded-lg md:-rotate-6 md:translate-x-[-45%] lg:translate-x-[-80%] "
+          className="w-[300px] rotate-3 md:absolute md:w-[350px] md:z-10 md:top-14 rounded-lg md:-rotate-6 md:translate-x-[-45%] lg:translate-x-[-80%] lg:w-[350px] "
           src={imagemSobre1}
         />
 
         <Image
           alt="barbearia"
-          className=" w-full hidden lg:inline md:w-[250px] absolute rounded-lg z-[5] "
+          className=" w-[300px] hidden lg:inline md:w-[250px] absolute rounded-lg z-[5] "
           src={imagemSobre3}
         />
 
@@ -30,7 +30,7 @@ export default function Sobre() {
         Sobre
       </h2>
 
-      <p className='text-white text-center md:p-8 ' >
+      <p className='text-white text-center md:p-8 md:px-20 ' >
         Lorem ipsum dolor sit amet consectetur. Sed vitae egestas risus in eleifend porttitor nam. Amet ut dictumst commodo aliquam eget augue at mi. Commodo sollicitudin ultrices ut nulla venenatis quam at.
       </p>
     </section>
