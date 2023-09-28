@@ -15,7 +15,7 @@ export default function Servicos() {
       </h2>
 
       <p className=" text-center md:p-8 md:px-20  " >
-        Lorem ipsum dolor sit amet consectetur. Etiam mus vitae lectus proin pellentesque mattis iaculis. In viverra accumsan sagittis tempus duis a. Sagittis mollis a eu urna eget id.
+      Costa Barber Shop é uma ótima opção para homens que buscam um lugar para cuidar do seu visual. A barbearia oferece uma variedade de serviços de qualidade, prestados por um profissional experiente e qualificado.
       </p>
 
       <Card 
