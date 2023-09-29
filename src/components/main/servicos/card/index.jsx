@@ -9,7 +9,7 @@ export default function Card({img, title, price}) {
   });
 
   return(
-    <div className=" bg-white w-72 h-72 p-2 rounded-2xl flex flex-col gap-2 " >
+    <div className=" bg-white w-80 h-80 p-2 rounded-2xl flex flex-col gap-2 " >
       <div style={{
         backgroundImage: `url(${img})`,
         backgroundSize: 'cover',
@@ -23,7 +23,7 @@ export default function Card({img, title, price}) {
           background: `${backgroundlinearServicosPreco}`
         }}
       >
-        <h2 className=" font-bold text-[18px] " >
+        <h2 className=" font-bold text-[18px] p-1" >
           {title}
         </h2>
         <h2 className="bg-black text-white p-2 rounded-lg " >
