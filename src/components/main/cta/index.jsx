@@ -21,6 +21,7 @@ export default function Cta() {
           <h1
             className="text-[22px] p-5 font-bold text-center lg:text-[32px] xl:text-[40px] xl:pb-8 "
           >
+            A BARBEARIA COSTA ACREDITA QUE
             ESTILO É UM REFLEXO DA SUA ATITUDE E
             SUA PERSONALIDADE
           </h1>
