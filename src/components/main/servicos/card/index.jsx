@@ -1,21 +1,32 @@
+"use client"
 import { backgroundlinearServicosPreco } from "@/components/utils/imageLinks";
 
-export default function Card({img, title, price}) {
+export default function Card({ img, title, price, handle }) {
 
   const formatPrice = price.toLocaleString('pt-BR', {
-    style:'currency',
-    currency:'BRL',
+    style: 'currency',
+    currency: 'BRL',
     minimumFractionDigits: 2,
   });
 
-  return(
-    <div className=" bg-white w-80 h-80 p-2 rounded-2xl flex flex-col gap-2 " >
+  return (
+    <div
+      className=" bg-white w-80 h-80 p-2 rounded-2xl flex flex-col gap-2 cursor-pointer 
+      hover:scale-105 transition-all ease-in-out duration-500 "
+      onClick={handle}
+      style={{
+        ":hover": {
+          "background-color": "rgba(0, 0, 0, 0.5)",
+          "filter": "blur(5px)",
+        },
+      }}
+    >
       <div style={{
         backgroundImage: `url(${img})`,
         backgroundSize: 'cover',
         backgroundPosition: 'bottom'
       }}
-      className="h-full rounded-2xl"
+        className="h-full rounded-2xl"
       />
       <div
         className="flex items-center justify-around p-2 rounded-b-xl"

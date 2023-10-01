@@ -1,6 +1,13 @@
+'use client'
 export default function Instagram() {
+
+  function handleInsta() {
+    window.open("https://www.instagram.com/_costabarbershop/");
+  };
+
   return (
       <svg
+      onClick={handleInsta}
       height="100%"
       width="100%"
       viewBox="0 0 54 54"

@@ -1,7 +1,17 @@
+"use client"
 import { backgroundCta, backgroundlinearServicos } from "@/components/utils/imageLinks";
 import Card from "./card";
 
 export default function Servicos() {
+
+  function handleBookMe(){
+    window.open("https://costabarbershop.youcanbook.me/")
+  };
+
+  function handleWhats(){
+    window.open("https://api.whatsapp.com/send?phone=5512981666880&text=Ol%C3%A1%20eu%20vim%20pelo%20site%20e%20quero%20adquirir%20um%20plano%20mensal")
+  };
+
   return (
     <section
       className=" py-8 px-4 flex flex-col items-center gap-4 "
@@ -23,18 +33,22 @@ export default function Servicos() {
           img={backgroundCta}
           title="CABELO"
           price={25}
+          handle={handleBookMe}
+
         />
 
         <Card
           img={backgroundCta}
           title="BARBA"
           price={20}
+          handle={handleBookMe}
         />
 
         <Card
           img={backgroundCta}
           title="CABELO E BARBA"
           price={40}
+          handle={handleBookMe}
         />
       </div>
 
@@ -50,18 +64,21 @@ export default function Servicos() {
           img={backgroundCta}
           title="4 CORTES"
           price={80}
+          handle={handleWhats}
         />
 
         <Card
           img={backgroundCta}
           title="4 CORTES  2 BARBA"
           price={110}
+          handle={handleWhats}
         />
 
         <Card
           img={backgroundCta}
           title="4 CORTES  4 BARBA"
           price={140}
+          handle={handleWhats}
         />
       </div>
 

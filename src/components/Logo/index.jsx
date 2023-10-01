@@ -2,10 +2,12 @@ import Image from "next/image";
 import logo from "../../../public/costa-barbearia.png";
 
 export default function Logo() {
-  const className = " w-14 h-14 md:w-20 md:h-20 lg:w-28 lg:h-28 rounded-md  "
+  const className = " w-40 h-40 md:w-56 md:h-56 lg:w-60 lg:h-60 rounded-[32px] shadow-[0_0_19px_0_white] "
 
   return (
-    <div>
+    <div
+      className="flex justify-center"
+    >
         <a href="#">
           <Image
             src={logo}
