@@ -1,3 +1,4 @@
+import Adress from "../adress";
 import Squad from "../squad";
 import Cta from "./cta";
 import Servicos from "./servicos";
@@ -10,6 +11,7 @@ export default function Main() {
       <Sobre />
       <Servicos />
       <Squad />
+      <Adress />
     </>
   );
 };
