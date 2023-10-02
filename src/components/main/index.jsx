@@ -1,3 +1,4 @@
+import Squad from "../squad";
 import Cta from "./cta";
 import Servicos from "./servicos";
 import Sobre from "./sobre"
@@ -8,6 +9,7 @@ export default function Main() {
       <Cta />
       <Sobre />
       <Servicos />
+      <Squad />
     </>
   );
 };

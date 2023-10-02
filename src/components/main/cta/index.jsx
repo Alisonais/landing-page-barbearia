@@ -47,10 +47,10 @@ export default function Cta() {
         <div
           className="flex gap-8 "
         >
-          <div className="h-6 w-6 md:h-10 md:w-10 lg:h-14 lg:w-14 hover:scale-105 transition-all ease-in-out duration-500 ">
+          <div className="h-6 w-6 md:h-10 md:w-10 lg:h-14 lg:w-14 hover:scale-110 transition-all ease-in-out duration-500 ">
             <Instagram />
           </div>
-          <div className="h-6 w-6 md:h-10 md:w-10 lg:h-14 lg:w-14 hover:scale-105 transition-all ease-in-out duration-500 ">
+          <div className="h-6 w-6 md:h-10 md:w-10 lg:h-14 lg:w-14 hover:scale-110 transition-all ease-in-out duration-500 ">
             <WhatsApp />
           </div>
 
