@@ -1,6 +1,6 @@
 'use client'
 import Button from '../Button';
-import Logo from '../Logo';
+import Logo from '../utils/logos/LogoCostaBarbearia';
 import DropDown from '../dropDown';
 import Nav from '../nav';
 

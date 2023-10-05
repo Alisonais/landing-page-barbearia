@@ -1,5 +1,5 @@
 import { backgroundCta } from "@/components/utils/imageLinks";
-import LogoInsta from "../logoInsta";
+import Instagram from "@/components/utils/logos/instagram";
 
 export default function Member() {
   return (
@@ -24,9 +24,9 @@ export default function Member() {
       </div>
 
       <div
-        className="p-2 flex justify-center hover:scale-110 transition-all ease-in-out duration-500"
+        className="p-2 flex justify-center hover:scale-110 transition-all ease-in-out duration-500 stroke-white"
       >
-        <LogoInsta />
+        <Instagram />
       </div>
     </div>
   );
