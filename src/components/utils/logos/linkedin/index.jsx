@@ -1,6 +1,14 @@
-export default function Linkedin() {
+'use client'
+export default function Linkedin({url}) {
+
+  function handlelink(){
+    window.open(url)
+  }
+
   return (
     <svg
+      onClick={handlelink}
+      className="cursor-pointer hover:scale-125 transition-all ease-in-out duration-500 "
       width="36"
       height="36"
       viewBox="0 0 36 36"

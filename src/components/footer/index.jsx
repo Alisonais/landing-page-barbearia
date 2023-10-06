@@ -11,18 +11,24 @@ export default function Footer() {
     >
       <Logo />
 
-    <div>
-      <p
-      className=" p-2 text-azulEscuro text-center font-bold "
-      >Desenvolvido por Alison Silva</p>
-      <div 
-      className=" flex flex-row justify-center gap-2 p-2 stroke-azulEscuro "
-      >
-        <GitHub />
-        <Whatsapp />
-        <Linkedin />
+      <div>
+        <p
+          className=" p-2 text-azulEscuro text-center font-bold "
+        >Desenvolvido por Alison Silva</p>
+        <div
+          className=" flex flex-row justify-center gap-2 p-2 stroke-azulEscuro "
+        >
+          <GitHub
+            url="https://github.com/Alisonais"
+          />
+          <Whatsapp 
+          text="Olá vim pelo site da barbearia e gostaria de tirar algumas dúvidas"
+          />
+          <Linkedin 
+          url="https://www.linkedin.com/in/alisonais/"
+          />
+        </div>
       </div>
-    </div>
     </footer>
   );
 };

@@ -1,6 +1,12 @@
-export default function GitHub() {
+'use client'
+export default function GitHub({url}) {
+  function handlelink(){
+    window.open(url)
+  }
   return (
     <svg
+      onClick={handlelink}
+      className="cursor-pointer hover:scale-125 transition-all ease-in-out duration-500 "
       width="34"
       height="34"
       viewBox="0 0 34 34"

@@ -25,7 +25,7 @@ export default function Servicos() {
       </h2>
 
       <p className=" text-center md:p-8 md:px-20  " >
-        Costa Barber Shop é uma ótima opção para homens que buscam um lugar para cuidar do seu visual. A barbearia oferece uma variedade de serviços de qualidade, prestados por um profissional experiente e qualifica.
+        Costa Barber Shop é uma ótima opção para homens que buscam um lugar para cuidar do seu visual. A barbearia oferece uma variedade de serviços de qualidade, prestados por um profissional experiente e qualificado.
       </p>
 
       <div className="  flex flex-col gap-4 md:w-[900px] md:flex-row md:flex-wrap justify-center " >
@@ -57,7 +57,7 @@ export default function Servicos() {
       </h2>
 
       <p className=" text-center md:p-8 md:px-20  " >
-        Quer economizar, mas não quer abrir mão do estilo? temos  planos perfeitos para você!
+        Quer economizar, mas não quer abrir mão do estilo? Temos  planos perfeitos para você!
       </p>
       <div className="  flex flex-col gap-4 md:w-[900px] md:flex-row md:flex-wrap justify-center " >
         <Card

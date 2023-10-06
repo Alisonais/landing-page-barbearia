@@ -25,14 +25,14 @@ export default function Cta() {
           <h1
             className="text-[22px] p-8 font-bold text-center lg:text-[32px] xl:text-[40px] xl: "
           >
-            Elegância Ousadia e Barba Alinhada
+            Elegância, Ousadia e Barba Alinhada
           </h1>
         </div>
 
         <div>
           <h2 className=" text-[18px] text-center lg:text-[22px] xl:text-[32px] xl:pb-8 ">
-            Hórario de funcionamento: 08:00 às 19:00 de terça à quarta <br />
-            08:00 às 21:00 de quinta à sabado
+            Horário de funcionamento: <br /> 08:00h às 19:00h de terça à quarta. <br />
+            08:00h às 21:00h de quinta à sabado.
           </h2>
         </div>
 

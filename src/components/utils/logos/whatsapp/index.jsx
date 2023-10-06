@@ -1,6 +1,16 @@
-export default function Whatsapp() {
+'use client'
+export default function Whatsapp({text}) {
+
+  const tel = '12987042092'
+
+    function handlelink(){
+      const textEncode = encodeURI(text);
+      window.open(`https://api.whatsapp.com/send?phone=55${tel}&text=${textEncode}`)
+    }
   return (
     <svg
+      onClick={handlelink}
+      className="cursor-pointer hover:scale-125 transition-all ease-in-out duration-500 "
       width="36"
       height="36"
       viewBox="0 0 36 36"
