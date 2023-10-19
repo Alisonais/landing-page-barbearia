@@ -1,5 +1,5 @@
 "use client"
-import { backgroundCta, backgroundlinearServicos } from "@/components/utils/imageLinks";
+import { backgroundlinearServicos, imagem1corte, imagem2corte, imagem3corte, imagem4corte, imagem5corte, imagem7corte } from "@/components/utils/imageLinks";
 import Card from "./card";
 
 export default function Servicos() {
@@ -30,7 +30,7 @@ export default function Servicos() {
 
       <div className="  flex flex-col gap-4 md:w-[900px] md:flex-row md:flex-wrap justify-center " >
         <Card
-          img={backgroundCta}
+          img={imagem1corte.src}
           title="CABELO"
           price={25}
           handle={handleBookMe}
@@ -38,14 +38,14 @@ export default function Servicos() {
         />
 
         <Card
-          img={backgroundCta}
+          img={imagem2corte.src}
           title="BARBA"
           price={20}
           handle={handleBookMe}
         />
 
         <Card
-          img={backgroundCta}
+          img={imagem3corte.src}
           title="CABELO E BARBA"
           price={40}
           handle={handleBookMe}
@@ -61,21 +61,21 @@ export default function Servicos() {
       </p>
       <div className="  flex flex-col gap-4 md:w-[900px] md:flex-row md:flex-wrap justify-center " >
         <Card
-          img={backgroundCta}
+          img={imagem4corte.src}
           title="4 CORTES"
           price={80}
           handle={handleWhats}
         />
 
         <Card
-          img={backgroundCta}
+          img={imagem5corte.src}
           title="4 CORTES  2 BARBA"
           price={110}
           handle={handleWhats}
         />
 
         <Card
-          img={backgroundCta}
+          img={imagem7corte.src}
           title="4 CORTES  4 BARBA"
           price={140}
           handle={handleWhats}

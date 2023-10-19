@@ -1,10 +1,10 @@
 'use client'
 import Buttom from "@/components/Button";
-import WhatsApp from "../../../../public/whatsapp logo";
-import Instagram from "../../../../public/instagram logo";
-import { backgroundCta, backgroundLinearGradientCta } from '../../utils/imageLinks'
 import Logo from "@/components/utils/logos/LogoCostaBarbearia";
 import { motion } from 'framer-motion';
+import Instagram from "../../../../public/instagram logo";
+import WhatsApp from "../../../../public/whatsapp logo";
+import { backgroundCta, backgroundLinearGradientCta } from '../../utils/imageLinks';
 
 export default function Cta() {
   const spring = {
@@ -16,7 +16,7 @@ export default function Cta() {
     <section
 
       style={{
-        backgroundImage: `url(${backgroundCta})`,
+        backgroundImage: `url(${backgroundCta.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'bottom'
       }}

@@ -1,4 +1,4 @@
-import { backgroundCta } from "@/components/utils/imageLinks";
+import { imagem6corte } from "@/components/utils/imageLinks";
 import Instagram from "@/components/utils/logos/instagram";
 
 export default function Member() {
@@ -7,7 +7,7 @@ export default function Member() {
       <div
         className="h-[300px] w-[250px] rounded-2xl "
         style={{
-          backgroundImage: `url(${backgroundCta})`,
+          backgroundImage: `url(${imagem6corte.src})`,
           backgroundSize: 'cover',
           backgroundPosition: 'bottom'
         }}

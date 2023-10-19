@@ -24,7 +24,7 @@ export default function Card({ img, title, price, handle }) {
       <div style={{
         backgroundImage: `url(${img})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'bottom'
+        backgroundPosition: 'center'
       }}
         className="h-full rounded-2xl"
       />
