@@ -1,11 +1,11 @@
-import imagem1 from "../../../../public/imagem1.jpeg";
-import imagem2 from "../../../../public/imagem2.jpeg";
-import imagem3 from "../../../../public/imagem3.jpeg";
-import imagem4 from "../../../../public/imagem4.jpeg";
-import imagem5 from "../../../../public/imagem5.jpeg";
-import imagem6 from "../../../../public/imagem6.jpeg";
-import imagem7 from "../../../../public/imagem7.jpeg";
-import imagemBackground from "../../../../public/imagemBackground.png";
+import imagem1 from "../../../../public/imagem1.webp";
+import imagem2 from "../../../../public/imagem2.webp";
+import imagem3 from "../../../../public/imagem3.webp";
+import imagem4 from "../../../../public/imagem4.webp";
+import imagem5 from "../../../../public/imagem5.webp";
+import imagem6 from "../../../../public/imagem6.webp";
+import imagem7 from "../../../../public/imagem7.webp";
+import imagemBackground from "../../../../public/imagemBackground.webp";
 
 export const backgroundCta = imagemBackground;
 
