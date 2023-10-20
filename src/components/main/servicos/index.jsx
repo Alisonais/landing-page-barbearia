@@ -3,7 +3,6 @@ import { backgroundlinearServicos, imagem1corte, imagem2corte, imagem3corte, ima
 import Card from "./card";
 
 export default function Servicos() {
-
   function handleBookMe(){
     window.open("https://costabarbershop.youcanbook.me/")
   };
@@ -34,7 +33,7 @@ export default function Servicos() {
           title="CABELO"
           price={25}
           handle={handleBookMe}
-
+        
         />
 
         <Card
