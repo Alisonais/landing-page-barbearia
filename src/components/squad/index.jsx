@@ -1,5 +1,5 @@
-
-import Member from "./menber";
+import dynamic from "next/dynamic";
+const Member = dynamic (()=> import("../squad/menber") );
 
 export default function Squad() {
   return (

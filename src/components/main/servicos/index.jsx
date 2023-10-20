@@ -13,7 +13,7 @@ export default function Servicos() {
   };
 
   return (
-    <section
+      <section
       className=" py-8 px-4 flex flex-col items-center gap-4 "
       style={{
         background: `${backgroundlinearServicos}`

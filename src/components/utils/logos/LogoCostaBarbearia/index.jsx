@@ -13,6 +13,7 @@ export default function Logo() {
             src={logo}
             alt="logo"
             className={className}
+            loading="lazy"
           /> 
         </a>
       </div>
