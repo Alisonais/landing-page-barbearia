@@ -6,12 +6,28 @@ import Instagram from "../../../../public/instagram logo";
 import WhatsApp from "../../../../public/whatsapp logo";
 import { backgroundCta, backgroundLinearGradientCta } from '../../utils/imageLinks';
 
+
+
 export default function Cta() {
-  const spring = {
-    type: "spring",
-    damping: 10,
-    stiffness: 100
+
+  const ctaVariant = {
+    hidden: {
+      display: 'relative',
+      opacity: 0,
+      y: '50px'
+    },
+    visible: {
+      display: 'flex',
+      opacity: 1,
+      y: '0px',
+      transition: {
+        duration: 3
+      }
+    }
   }
+
+
+
   return (
     <section
 
@@ -25,17 +41,12 @@ export default function Cta() {
 
       <div
         style={{ background: `${backgroundLinearGradientCta}` }}
+        id="divCta"
       >
         <motion.div
-          initial={{
-            display: 'relative',
-            y: '-900px'
-          }}
-          animate={{
-            display: 'flex',
-            y: '0px'
-          }}
-          transition={spring}
+          variants={ctaVariant}
+          initial= 'hidden'
+          whileInView='visible'
           className=" h-full w-full text-white flex flex-col items-center justify-evenly p-4 md:p-8 lg:p-16 xl:p-20 "
         >
           <div>
