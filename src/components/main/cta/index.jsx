@@ -12,16 +12,18 @@ export default function Cta() {
 
   const ctaVariant = {
     hidden: {
-      display: 'relative',
+      'overflow-x': 'hidden',
       opacity: 0,
-      y: '50px'
+      x: 300
     },
     visible: {
-      display: 'flex',
       opacity: 1,
-      y: '0px',
+      x: 0,
       transition: {
-        duration: 3
+        type:'spring',
+        mass: 1,
+        dampping: 2,
+        duration: 0.5,
       }
     }
   }
@@ -36,12 +38,10 @@ export default function Cta() {
         backgroundSize: 'cover',
         backgroundPosition: 'bottom'
       }}
-      className="h-full"
     >
 
       <div
         style={{ background: `${backgroundLinearGradientCta}` }}
-        id="divCta"
       >
         <motion.div
           variants={ctaVariant}

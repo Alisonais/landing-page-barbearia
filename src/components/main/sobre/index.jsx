@@ -10,7 +10,7 @@ export default function Sobre() {
   const cardVariants = {
     hidden: {
       x: 300,
-      opacity:0
+      opacity: 0
     },
     visible: {
       x: 0,
@@ -25,36 +25,106 @@ export default function Sobre() {
     }
   };
 
+  const imageCenterVariant = {
+    hidden: {
+      opacity: 0,
+      scale: 0.5,
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.5
+      }
+    }
+  };
+
+  const imageLeftVariant = {
+    hidden: {
+      opacity: 0,
+      scale: 0.5,
+      y: -50,
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        delay: 0.2,
+      }
+    }
+  };
+
+  const imageRightVariant = {
+    hidden: {
+      opacity: 0,
+      scale: 0.5,
+      y: -50,
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        delay: 0.4,
+      }
+    }
+  };
+
   return (
     <section
-      className=" bg-azulEscuro px-4 py-8 "
+      className=" bg-azulEscuro h-[100vh] flex flex-col justify-evenly px-4 py-8 "
     >
-      <motion.div 
-      className='flex justify-center relative' 
-      variants={cardVariants}
-      initial='hidden'
-      whileInView='visible'
+      <motion.div
+        className='flex justify-center relative'
+      // variants={cardVariants}
+      // initial='hidden'
+      // whileInView='visible'
       >
-        <Image
-          alt="barbearia"
-          className="w-[300px] rotate-3 md:absolute md:w-[350px] md:z-10 md:top-14 rounded-lg md:-rotate-6 md:translate-x-[-45%] lg:translate-x-[-80%] lg:w-[350px] "
-          src={imagemSobre1}
-          loading="lazy"
-        />
 
-        <Image
-          alt="barbearia"
-          className=" w-[300px] hidden lg:inline md:w-[250px] absolute rounded-lg z-[5] "
-          src={imagemSobre3}
-          loading="lazy"
-        />
+        <motion.div
+          className='md:absolute md:top-14 md:z-10'
+          variants={imageLeftVariant}
+          initial='hidden'
+          whileInView='visible'
+        >
+          <Image
+            alt="barbearia"
+            className="w-[300px] rotate-3 md:w-[350px] rounded-lg md:-rotate-6 md:translate-x-[-45%] lg:translate-x-[-80%] lg:w-[350px] "
+            src={imagemSobre1}
+            loading="lazy"
+          />
+        </motion.div>
 
-        <Image
-          alt="barbearia"
-          className=" w-full hidden md:inline md:w-[250px] absolute rounded-lg md:rotate-6 md:translate-x-[45%] lg:translate-x-[95%] "
-          src={imagemSobre2}
-          loading="lazy"
-        />
+        <motion.div
+          className='absolute'
+          variants={imageCenterVariant}
+          initial='hidden'
+          whileInView='visible'
+        >
+          <Image
+            alt="barbearia"
+            className=" w-[300px] hidden lg:inline md:w-[250px] rounded-lg z-[5] "
+            src={imagemSobre3}
+            loading="lazy"
+          />
+        </motion.div>
+
+        <motion.div
+          className='absolute'
+          variants={imageRightVariant}
+          initial='hidden'
+          whileInView='visible'
+        >
+          <Image
+            alt="barbearia"
+            className=" w-full hidden md:inline md:w-[250px] rounded-lg md:rotate-6 md:translate-x-[45%] lg:translate-x-[95%] "
+            src={imagemSobre2}
+            loading="lazy"
+          />
+        </motion.div>
 
       </motion.div>
 

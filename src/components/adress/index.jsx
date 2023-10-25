@@ -1,3 +1,5 @@
+import Title from "../Title";
+
 export default function Adress() {
   return (
     <section
@@ -6,7 +8,7 @@ export default function Adress() {
       <div
         className="text-azulEscuro text-[40px] font-bold text-center p-4 "
       >
-        Nosso Endereço
+        <Title title='Nosso Endereço' />
       </div>
       <div
         className="w-full h-[350px] flex justify-center md:h-[550px] lg:h-[750px] "

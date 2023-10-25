@@ -1,4 +1,5 @@
 "use client"
+import Title from "@/components/Title";
 import { backgroundlinearServicos, imagem1corte, imagem2corte, imagem3corte, imagem4corte, imagem5corte, imagem7corte } from "@/components/utils/imageLinks";
 import Card from "./card";
 
@@ -20,14 +21,14 @@ export default function Servicos() {
     >
 
       <h2 className=" font-bold text-[40px] text-center " >
-        Serviços
+        <Title title='Serviços' />
       </h2>
 
       <p className=" text-center md:p-8 md:px-20  " >
         Costa Barber Shop é uma ótima opção para homens que buscam um lugar para cuidar do seu visual. A barbearia oferece uma variedade de serviços de qualidade, prestados por um profissional experiente e qualificado.
       </p>
 
-      <div className="  flex flex-col gap-4 md:w-[900px] md:flex-row md:flex-wrap justify-center " >
+      <div className="  flex flex-col gap-4 md:w-[900px] lg:w-[1000px] md:flex-row md:flex-wrap justify-center " >
         <Card
           img={imagem1corte.src}
           title="CABELO"
@@ -52,13 +53,13 @@ export default function Servicos() {
       </div>
 
       <h2 className=" font-bold text-[40px] text-center " >
-        Planos
+      <Title title='Planos' />
       </h2>
 
       <p className=" text-center md:p-8 md:px-20  " >
         Quer economizar, mas não quer abrir mão do estilo? Temos  planos perfeitos para você!
       </p>
-      <div className="  flex flex-col gap-4 md:w-[900px] md:flex-row md:flex-wrap justify-center " >
+      <div className="  flex flex-col gap-4 md:w-[900px] lg:w-[1000px] md:flex-row md:flex-wrap justify-center " >
         <Card
           img={imagem4corte.src}
           title="4 CORTES"

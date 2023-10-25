@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export default function Title({title}) {
-  console
+
   const h1Container = {
     hidden: {
       opacity: 0,
@@ -14,7 +14,7 @@ export default function Title({title}) {
 
   const titleVariants = {
     hidden: {
-      display: 'none',
+      display: 'inline-block',
       opacity: 0,
       x: 30,
     },

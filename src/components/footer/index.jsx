@@ -1,3 +1,4 @@
+import Title from "../Title";
 import Logo from "../utils/logos/LogoCostaBarbearia";
 import GitHub from "../utils/logos/gitHub";
 import Linkedin from "../utils/logos/linkedin";
@@ -12,9 +13,11 @@ export default function Footer() {
       <Logo />
 
       <div>
-        <p
-          className=" p-2 text-azulEscuro text-center font-bold "
-        >Desenvolvido por Alison Silva</p>
+        <div
+        className=" p-2 text-azulEscuro text-center font-bold "
+        >
+          <Title title='Desenvolvido por Alison Silva' />
+        </div>
         <div
           className=" flex flex-row justify-center gap-2 p-2 stroke-azulEscuro "
         >

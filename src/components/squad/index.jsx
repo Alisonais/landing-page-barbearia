@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Title from "../Title";
 const Member = dynamic (()=> import("../squad/menber") );
 
 export default function Squad() {
@@ -9,7 +10,7 @@ export default function Squad() {
       <h2
         className="text-[#646464] text-[44px] font-bold pb-4 "
       >
-        Equipe
+        <Title title='Equipe' />
       </h2>
 
       <Member />
