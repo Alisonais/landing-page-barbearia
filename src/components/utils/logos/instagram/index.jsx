@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { pathVariants, svgVariants } from "../../svgAnimate";
 
-export default function Instagram() {
+export default function Instagram({link}) {
 
   function handleInsta() {
-    window.open("https://www.instagram.com/_costabarbershop/");
+    window.open(link);
   };
 
   return (

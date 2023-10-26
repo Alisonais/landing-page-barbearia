@@ -75,7 +75,7 @@ export default function Sobre() {
 
   return (
     <section
-      className=" bg-azulEscuro h-[100vh] flex flex-col justify-evenly px-4 py-8 "
+      className=" bg-azulEscuro h-[100%] flex flex-col justify-evenly px-4 py-8 "
     >
       <motion.div
         className='flex justify-center relative'
@@ -134,8 +134,14 @@ export default function Sobre() {
         />
       </h2>
 
-      <p className='text-white text-center md:p-8 md:px-20 ' >
-        Lorem ipsum dolor sit amet consectetur. Sed vitae egestas risus in eleifend porttitor nam. Amet ut dictumst commodo aliquam eget augue at mi. Commodo sollicitudin ultrices ut nulla venenatis quam at.
+      <p className='text-white text-center md:text-xl lg:text-2xl p-4 md:p-8 md:px-20 ' >
+      <strong>Costa Barber Shop </strong>
+
+A Costa Barber Shop é um espaço dedicado ao cuidado masculino. Oferecemos cortes de cabelo, barba e outros serviços para homens de todas as idades.<br /><br />
+
+Nossos barbeiros são profissionais qualificados e experientes que estão sempre atualizados com as últimas tendências. Utilizamos produtos de alta qualidade para garantir um resultado impecável. <br /><br />
+
+Nossa missão é oferecer aos nossos clientes uma experiência de beleza e bem-estar única. Venha nos conhecer e descubra a diferença!
       </p>
     </section>
   );

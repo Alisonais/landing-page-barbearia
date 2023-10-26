@@ -26,7 +26,7 @@ export default function Member() {
       <div
         className="p-2 flex justify-center hover:scale-110 transition-all ease-in-out duration-500 stroke-white"
       >
-        <Instagram />
+        <Instagram link="https://www.instagram.com/_bruniiinho/" />
       </div>
     </div>
   );
