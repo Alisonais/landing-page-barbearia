@@ -1,13 +1,12 @@
-import { imagem6corte } from "@/components/utils/imageLinks";
 import Instagram from "@/components/utils/logos/instagram";
 
-export default function Member() {
+export default function Member({imagem, linkInsta, name}) {
   return (
     <div>
       <div
         className="h-[300px] w-[250px] rounded-2xl "
         style={{
-          backgroundImage: `url(${imagem6corte.src})`,
+          backgroundImage: `url(${imagem.src})`,
           backgroundSize: 'cover',
           backgroundPosition: 'bottom'
         }}
@@ -18,7 +17,7 @@ export default function Member() {
           background:'linear-gradient(344deg, black 5%, transparent 50%)'
         }}
         >
-          <h3 className="text-bgButton font-bold p-4 ">Bruno</h3>
+          <h3 className="text-bgButton font-bold p-4 ">{name}</h3>
         </div>
 
       </div>
@@ -26,7 +25,7 @@ export default function Member() {
       <div
         className="p-2 flex justify-center hover:scale-110 transition-all ease-in-out duration-500 stroke-white"
       >
-        <Instagram link="https://www.instagram.com/_bruniiinho/" />
+        <Instagram link={linkInsta} />
       </div>
     </div>
   );

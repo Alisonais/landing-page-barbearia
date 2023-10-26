@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import Title from "../Title";
+import { imagem6corte, imagem9corte } from "../utils/imageLinks";
 const Member = dynamic (()=> import("../squad/menber") );
 
 export default function Squad() {
@@ -13,7 +14,18 @@ export default function Squad() {
         <Title title='Equipe' />
       </h2>
 
-      <Member />
+      <div className="flex flex-col gap-4" >
+      <Member 
+      imagem={imagem6corte} 
+      linkInsta={"https://www.instagram.com/_bruniiinho/"}
+      name={'Bruno'} 
+      />
+      <Member 
+      imagem={imagem9corte} 
+      linkInsta={"https://www.instagram.com/domlimabarberinst/"}
+      name={'Naldo Lima'}
+      />
+      </div>
       
     </section>
   );
