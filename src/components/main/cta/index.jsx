@@ -14,15 +14,16 @@ export default function Cta() {
     hidden: {
       'overflow-x': 'hidden',
       opacity: 0,
-      x: 300
+      scale: 0.7
     },
     visible: {
       opacity: 1,
-      x: 0,
+      scale: 1,
       transition: {
         type:'spring',
         mass: 1,
         dampping: 2,
+        delay: 0.5,
         duration: 0.5,
       }
     }
