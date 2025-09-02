@@ -1,7 +1,7 @@
 "use client"
 import { backgroundlinearServicosPreco } from "@/components/utils/imageLinks";
 
-export default function Card({ img, title, price, handle }) {
+export default function Card({ img, title, subtitle, price, handle }) {
 
   const formatPrice = price.toLocaleString('pt-BR', {
     style: 'currency',
@@ -34,8 +34,10 @@ export default function Card({ img, title, price, handle }) {
           background: `${backgroundlinearServicosPreco}`
         }}
       >
-        <h2 className=" font-bold text-[18px] p-1" >
-          {title}
+        <h2 className="font-bold text-[18px] p-1" >
+          {title} 
+          <br/>
+          {subtitle}
         </h2>
         <h2 className="bg-black text-white p-2 rounded-lg " >
           {formatPrice}

@@ -1,6 +1,7 @@
 "use client"
 import Title from "@/components/Title";
-import { backgroundlinearServicos, imagem1corte, imagem3corte, imagem4corte, imagem5corte, imagem7corte, imagem8corte } from "@/components/utils/imageLinks";
+import { backgroundlinearServicos, corteBarba1Image, corteBarba2Image, cortecabelo1Image, cortecabelo2Image, imagem5corte, imagem7corte, tabelaServicoImage } from "@/components/utils/imageLinks";
+import Image from "next/image";
 import Card from "./card";
 
 export default function Servicos() {
@@ -39,56 +40,74 @@ export default function Servicos() {
         <Card
           img={imagem7corte.src}
           title="CABELO"
-          price={25}
+          price={30}
           handle={handleBookMe}
         
         />
 
         <Card
-          img={imagem8corte.src}
+          img={corteBarba1Image.src}
           title="BARBA"
-          price={20}
+          price={25}
           handle={handleBookMe}
         />
 
         <Card
-          img={imagem3corte.src}
+          img={corteBarba2Image.src}
           title="CABELO E BARBA"
-          price={40}
+          price={50}
           handle={handleBookMe}
         />
       </div>
 
       <h2 className=" font-bold text-[40px] text-center " >
-      <Title title='Planos' />
+      <Title title='Assinatura' />
       </h2>
 
       <p className=" text-center md:text-xl lg:text-2xl md:p-8 md:px-20  " >
-        Quer economizar, mas não quer abrir mão do estilo? Temos  planos perfeitos para você!
+        Quer economizar, mas não quer abrir mão do estilo, Temos plano de assinatura perfeito para você com uso ilimitado!
       </p>
       <div className="  flex flex-col gap-4 md:w-[900px] lg:w-[1000px] md:flex-row md:flex-wrap justify-center " >
         <Card
-          img={imagem1corte.src}
-          title="4 CORTES"
-          price={80}
+          img={cortecabelo1Image.src}
+          title="CORTE"
+          subtitle="Terça e Quinta"
+          price={100}
           handle={()=> handlelink('Olá, gostaria adquirir um plano mensal para 4 CORTES')}
         />
 
         <Card
-          img={imagem4corte.src}
-          title="4 CORTES  2 BARBA"
-          price={110}
+          img={cortecabelo2Image.src}
+          title="CORTE E BARBA"
+          subtitle="Terça e Quinta"
+          price={180}
           handle={()=> handlelink('Olá, gostaria adquirir um plano mensal para 4 CORTES e 2 BARBAS')}
         />
 
         <Card
           img={imagem5corte.src}
-          title="4 CORTES  4 BARBA"
-          price={140}
+          title="CORTE"
+          subtitle="TODOS OS DIAS"
+          price={114.99}
+          handle={()=> handlelink('Olá, gostaria adquirir um plano mensal para 4 CORTES e 4 BARBAS')}
+        />
+
+        <Card
+          img={corteBarba2Image.src}
+          title="CORTE E BARBA"
+          subtitle="TODOS OS DIAS"
+          price={194.99}
           handle={()=> handlelink('Olá, gostaria adquirir um plano mensal para 4 CORTES e 4 BARBAS')}
         />
       </div>
 
+      <div className="flex flex-col items-center gap-2">
+        <h2 className=" font-bold text-[28px] text-center " >
+        Veja nossa lista completa de serviços
+      </h2>
+        <Image className="rounded-xl" width={400} height={200} src={tabelaServicoImage.src} alt="tabela de serviços" />
+      </div>
+      
     </section >
   );
 };

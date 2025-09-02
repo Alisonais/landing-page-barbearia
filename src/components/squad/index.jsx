@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import Title from "../Title";
-import { imagem6corte, imagem9corte } from "../utils/imageLinks";
+import { brunoSquadImage, luizFernandoImage } from "../utils/imageLinks";
 const Member = dynamic (()=> import("../squad/menber") );
 
 export default function Squad() {
@@ -16,14 +16,14 @@ export default function Squad() {
 
       <div className="flex flex-col gap-4" >
       <Member 
-      imagem={imagem6corte} 
+      imagem={brunoSquadImage} 
       linkInsta={"https://www.instagram.com/_bruniiinho/"}
       name={'Bruno'} 
       />
       <Member 
-      imagem={imagem9corte} 
-      linkInsta={"https://www.instagram.com/domlimabarberinst/"}
-      name={'Naldo Lima'}
+      imagem={luizFernandoImage} 
+      linkInsta={"https://www.instagram.com/ruivo2x/"}
+      name={'Luis Fernando'}
       />
       </div>
       
