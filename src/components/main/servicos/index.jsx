@@ -71,7 +71,7 @@ export default function Servicos() {
         <Card
           img={cortecabelo1Image.src}
           title="CORTE"
-          subtitle="Terça e Quinta"
+          subtitle="de terça a quinta"
           price={100}
           handle={()=> handlelink('Olá, gostaria adquirir um plano mensal para 4 CORTES')}
         />
@@ -79,7 +79,7 @@ export default function Servicos() {
         <Card
           img={cortecabelo2Image.src}
           title="CORTE E BARBA"
-          subtitle="Terça e Quinta"
+          subtitle="de terça a quinta"
           price={180}
           handle={()=> handlelink('Olá, gostaria adquirir um plano mensal para 4 CORTES e 2 BARBAS')}
         />
