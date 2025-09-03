@@ -11,7 +11,7 @@ export default function Card({ img, title, subtitle, price, handle }) {
 
   return (
     <div
-      className=" bg-white w-80 h-80 p-2 rounded-2xl flex flex-col gap-2 cursor-pointer 
+      className=" bg-white w-80 h-[460px] p-2 rounded-2xl flex flex-col gap-2 cursor-pointer 
       hover:scale-105 transition-all ease-in-out duration-500 "
       onClick={handle}
       style={{
